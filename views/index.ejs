@@ -1,0 +1,13 @@
+<%- include('components/head'); -%>
+<%- include('components/navbar'); -%>
+
+<div class="container my-4" style="margin-top:100px">
+
+    <center>
+        <p>Type a random bengali sentence </p>
+        <form action="/recieve" method="post">
+            <input type="text" name="sentence" placeholder="যে কোন বাক্য"/> 
+            <button class="btn btn-primary me-2" type="submit"> Submit </button>
+        </form>
+    </center>
+

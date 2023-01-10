@@ -24,13 +24,13 @@ const corsOptionsAuth = {
     "credential":true
 };
 const corsOptions = {
-    origin:true,
+    origin:["http://localhost:3000","https://bdslp.vercel.app"],
     credentials: true,
     optionsSuccessStatus: 200, 
     preflightContinue: true,
     methods: 'GET,POST',
     allowedHeaders: ['Content-Type','Authorization'],
-    exposedHeaders: ['Content-Type','Authorization'],
+    exposedHeaders: ['Content-Type'],
     maxAge: 3600,
     accessControlAllowOrigin: true,
   }

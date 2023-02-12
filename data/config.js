@@ -5,7 +5,7 @@ const cookie = {
     maxAge: 3600,
 }
 const corsOptions = {
-    origin:["https://bdslp.vercel.app","http:localhost:3000"],
+    origin:"https://bdslp.vercel.app",
     credentials: true,
     optionsSuccessStatus: 200, 
     preflightContinue: true,

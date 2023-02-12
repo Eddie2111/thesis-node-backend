@@ -22,6 +22,6 @@ app.use("/bulk", require('./routes/bulk'));
 app.use("/login", cors(corsOptions), require('./routes/login'));
 app.use("/success", cors(corsOptions), require('./routes/success'));
 
-app.listen(process.env.port,()=>{
-    console.log(`Server is running on port ${process.env.port}`);
+app.listen(process.env.PORT,()=>{
+    console.log(`Server is running on port ${process.env.PORT}`);
 })

@@ -15,7 +15,7 @@ app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 app.use(session(sessionSetting));
 app.use(cookieparser());
-app.use(cors(corsOption));
+app.use(cors(corsOptions));
 
 app.use("/", require('./routes/index'));
 app.use("/recieve", require('./routes/recieve'));
